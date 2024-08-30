@@ -18,6 +18,7 @@
 my_dictionary = {
   "String": "A sequence of characters",
   "List": "A sequence of any item",
+  "Dictionary": "Basically the same as a JS object but in JS all keys are converted to strings. More generally, while a list uses index numbers as keys with which to locate the values, a list uses strings etc."
 }
 
 # Note that:
@@ -40,6 +41,6 @@ print("  " + my_dictionary["List"])
 # print out the value below.
 
 print("A Dictionary is:")
-# ...
+print("  " + my_dictionary["Dictionary"])
 
 # Once you're done, move on to 038_dict_operations.py

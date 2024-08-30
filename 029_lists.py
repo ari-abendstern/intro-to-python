@@ -25,7 +25,7 @@ my_friends = ["Victoria", "Mel", "Melanie", "Emma"]
 
 # @TASK Try making your own here:
 
-your_list = ...
+your_list = [True, False, 1, "ok so you can do mixed arrays and include booleans also are they even called arrays in python let me google it ok so turns out arrays are a whole other thing and lists are sort of like js arrays cool that's good to know"]
 print(your_list)
 
 # @TASK and print it out by running:

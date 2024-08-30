@@ -57,8 +57,15 @@ def print_board(board):
   return grid
 
 def make_move(board, row, column, player):
-  board[row][column] = player
-  return board
+
+  if board[row][column] == '.':
+    board[row][column] = player
+    return board
+  
+  print("It's not empty. Be more demure next time.")
+  row = int(input("Enter a row: "))
+  column = int(input("Enter a column: "))
+  return make_move(board, row, column, player)
 
 
 # This function will extract three cells from the board
@@ -106,6 +113,10 @@ def is_game_over(board):
       if are_all_cells_the_same(board, group[0], group[1], group[2]):
         return True # We found a winning row!
         # Note that return also stops the function
+    if all(
+      map(lambda group: is_group_complete(board, group[0], group[1], group[2]), groups_to_check)
+      ):
+      return True #there are no empty spaces, it's a draw
   return False # If we get here, we didn't find a winning row
 
 # And test it out:

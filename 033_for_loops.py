@@ -2,6 +2,8 @@
 
 # There's another kind of loop — the `for` loop.
 
+# ----Ari note: this is equivalent to a js for of loop
+
 # It looks like this:
 
 for letter in ["a", "b", "c"]:
@@ -25,6 +27,8 @@ def print_numbers_in_range():
 # `range` more or less creates a list of the numbers from
 # its first parameter to one below its last parameter. So:
 # the numbers 0-9.
+
+# ----Ari note: using the range helper makes something that vaguely resembles a js for loop
 
 # Compare this to the `while` version which does the same
 # thing:
